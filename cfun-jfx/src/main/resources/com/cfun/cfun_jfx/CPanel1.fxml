@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: d3d7da;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cfun.cfun_jfx.CPanelController">
+   <children>
+      <AnchorPane fx:id="pane_MCFT_entree" layoutY="57.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="562.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sans%20titre02.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="53.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sans%20titreh1.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="678.0" layoutY="410.0" mnemonicParsing="false" onAction="#BilletEntreeFitnesspaneShow" prefHeight="150.0" prefWidth="150.0" style="-fx-border-radius: 10; -fx-background-radius: 130; -fx-background-color: 0070C0;" text="SUIVANT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="168.0" layoutY="410.0" mnemonicParsing="false" onAction="#BilletEntreeMuscupaneShow" prefHeight="150.0" prefWidth="150.0" style="-fx-border-radius: 10; -fx-background-radius: 130; -fx-background-color: 0070C0;" text="SUIVANT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="134.0" layoutY="123.0" text="MUSCULATION" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="695.0" layoutY="123.0" text="FITNESS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="84.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OMusculation.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="594.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OFitness.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="678.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@O1Fitness.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="180.0" layoutX="197.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@O1Musculation.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane_billet_Entree_Muscu" layoutY="57.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <Label layoutX="421.0" layoutY="14.0" text="Billet d'entrée Muscu">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label layoutX="78.0" layoutY="75.0" text="Billet d'entrée n°">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="78.0" layoutY="116.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="78.0" layoutY="155.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="78.0" layoutY="194.0" text="Montant :">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="74.0" layoutY="303.0" text="Etat du Complexe :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="254.0" layoutY="304.0" text="C-FUN">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="394.0" layoutY="304.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DateEntreeMuscu" layoutX="451.0" layoutY="304.0" promptText="jj/mm/aa" />
+            <Label layoutX="675.0" layoutY="303.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="HeureEntreeMuscu" layoutX="747.0" layoutY="303.0" promptText="hh:mm:ss" />
+            <Label layoutX="74.0" layoutY="371.0" prefWidth="200.0" text="Places disponibles M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="448.0" text="Places occupées F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="371.0" text="Taux occ. M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <Label layoutX="74.0" layoutY="447.0" prefWidth="200.0" text="Places disponibles F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="372.0" text="Places occupées M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="448.0" text="Taux occ. F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <TextField layoutX="143.0" layoutY="116.0" promptText="jj/mm/aa" />
+            <TextField layoutX="157.0" layoutY="155.0" prefHeight="31.0" prefWidth="107.0" promptText="hh:mm:ss" />
+            <TextField layoutX="174.0" layoutY="194.0" prefHeight="31.0" prefWidth="86.0" />
+            <Label layoutX="78.0" layoutY="552.0" prefWidth="200.0" text="M : en Musculation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="552.0" prefWidth="200.0" text="F : en Fitness">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="548.0" layoutY="663.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="NON">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Label layoutX="408.0" layoutY="612.0" text="Autre Opération :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="394.0" layoutY="663.0" mnemonicParsing="false" onAction="#Choixpaneshow" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="OUI">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane_Billet_Entree_Fitness" layoutX="10.0" layoutY="67.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <Label layoutX="420.0" layoutY="14.0" text="Billet d'entrée Fitness">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="75.0" text="Billet d'entrée n°">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="116.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="155.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="194.0" text="Montant :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="303.0" text="Etat du Complexe :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="304.0" text="C-FUN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="304.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DateEntreeFitness" layoutX="451.0" layoutY="304.0" promptText="jj/mm/aa" />
+            <Label layoutX="675.0" layoutY="303.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="HeureEntreeFitness" layoutX="747.0" layoutY="303.0" promptText="hh:mm:ss" />
+            <Label layoutX="74.0" layoutY="371.0" prefWidth="200.0" text="Places disponibles M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="448.0" text="Places occupées F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="371.0" text="Taux occ. M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <Label layoutX="74.0" layoutY="447.0" prefWidth="200.0" text="Places disponibles F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="372.0" text="Places occupées M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="448.0" text="Taux occ. F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <TextField layoutX="143.0" layoutY="116.0" promptText="jj/mm/aa" />
+            <TextField layoutX="157.0" layoutY="155.0" prefHeight="31.0" prefWidth="107.0" promptText="hh:mm:ss" />
+            <TextField layoutX="174.0" layoutY="194.0" prefHeight="31.0" prefWidth="86.0" />
+            <Label layoutX="78.0" layoutY="552.0" prefWidth="200.0" text="M : en Musculation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="552.0" prefWidth="200.0" text="F : en Fitness">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="548.0" layoutY="663.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="NON">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="408.0" layoutY="612.0" text="Autre Opération :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="394.0" layoutY="663.0" mnemonicParsing="false" onAction="#Choixpaneshow" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="OUI">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_logout" layoutX="857.0" layoutY="14.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="DECONNEXION" />
+      <AnchorPane fx:id="pane_ES" layoutY="68.0" prefHeight="740.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="51.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Entree.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="562.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sortie.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="183.0" layoutY="558.0" mnemonicParsing="false" onAction="#Entreepaneshow" text="ENTREE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button layoutX="697.0" layoutY="561.0" mnemonicParsing="false" onAction="#Sortiepaneshow" text="SORTIE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane_MCFT_sortie" layoutY="68.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="562.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sans%20titre02.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="670.0" fitWidth="412.0" layoutX="51.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sans%20titreh1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="594.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OFitness.png" />
+               </image></ImageView>
+            <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="84.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OMusculation.png" />
+               </image></ImageView>
+            <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="678.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@O1Fitness.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="180.0" layoutX="197.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@O1Musculation.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="153.0" layoutY="123.0" text="Musculation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="704.0" layoutY="123.0" text="Fitness" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <Button layoutX="695.0" layoutY="462.0" mnemonicParsing="false" onAction="#TicketSortieFitnesspaneShow" style="-fx-border-radius: 10; -fx-background-radius: 130; -fx-background-color: 0070C0;" text="SUIVANT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Button layoutX="187.0" layoutY="462.0" mnemonicParsing="false" onAction="#TicketSortieMuscupaneShow" style="-fx-border-radius: 10; -fx-background-radius: 130; -fx-background-color: 0070C0;" text="SUIVANT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane_ticket_Sortie_Fitness" layoutX="-2.0" layoutY="71.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <Label layoutX="78.0" layoutY="75.0" text="Tiket de sortie n°">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="116.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="155.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="194.0" text="Montant :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="303.0" text="Etat du Complexe :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="304.0" text="C-FUN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="304.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DateSortieFitness" layoutX="459.0" layoutY="306.0" promptText="jj/mm/aa" />
+            <Label layoutX="675.0" layoutY="303.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="HeureSortieFitness" layoutX="748.0" layoutY="306.0" promptText="hh:mm:ss" />
+            <Label layoutX="74.0" layoutY="371.0" prefWidth="200.0" text="Places disponibles M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="371.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="448.0" text="Places occupées F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="371.0" text="Taux occ. M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <Label layoutX="74.0" layoutY="447.0" prefWidth="200.0" text="Places disponibles F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="372.0" text="Places occupées M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="448.0" text="Taux occ. F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <TextField layoutX="142.0" layoutY="118.0" promptText="jj/mm/aa" />
+            <TextField layoutX="157.0" layoutY="154.0" prefHeight="31.0" prefWidth="107.0" promptText="hh:mm:ss" />
+            <TextField layoutX="174.0" layoutY="194.0" prefHeight="31.0" prefWidth="86.0" />
+            <Label layoutX="78.0" layoutY="552.0" prefWidth="200.0" text="M : en Musculation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="552.0" prefWidth="200.0" text="F : en Fitness">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="548.0" layoutY="663.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="NON">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="408.0" layoutY="612.0" text="Autre Opération :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="394.0" layoutY="663.0" mnemonicParsing="false" onAction="#Choixpaneshow" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="OUI">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="420.0" layoutY="14.0" text="Ticket de Sortie Fitness">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_ticket_Sortie_Muscu" layoutX="8.0" layoutY="81.0" prefHeight="740.0" prefWidth="1000.0" visible="false">
+         <children>
+            <Label layoutX="78.0" layoutY="75.0" text="Ticket de sortie n°">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="116.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="155.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="194.0" text="Montant :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="303.0" text="Etat du Complexe :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="304.0" text="C-FUN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="304.0" text="Date :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DateSortieMuscu" layoutX="459.0" layoutY="306.0" promptText="jj/mm/aa" />
+            <Label layoutX="675.0" layoutY="303.0" text="Heure :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="HeureSortieMuscu" layoutX="748.0" layoutY="306.0" promptText="hh:mm:ss" />
+            <Label layoutX="74.0" layoutY="371.0" prefWidth="200.0" text="Places disponibles M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="371.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="448.0" text="Places occupées F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="371.0" text="Taux occ. M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="370.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <Label layoutX="74.0" layoutY="447.0" prefWidth="200.0" text="Places disponibles F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="283.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="404.0" layoutY="372.0" text="Places occupées M :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="586.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" />
+            <Label layoutX="717.0" layoutY="448.0" text="Taux occ. F :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="840.0" layoutY="447.0" prefHeight="31.0" prefWidth="52.0" promptText="\%" />
+            <TextField layoutX="142.0" layoutY="118.0" promptText="jj/mm/aa" />
+            <TextField layoutX="157.0" layoutY="154.0" prefHeight="31.0" prefWidth="107.0" promptText="hh:mm:ss" />
+            <TextField layoutX="174.0" layoutY="194.0" prefHeight="31.0" prefWidth="86.0" />
+            <Label layoutX="78.0" layoutY="552.0" prefWidth="200.0" text="M : en Musculation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="552.0" prefWidth="200.0" text="F : en Fitness">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="548.0" layoutY="663.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="NON">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="408.0" layoutY="612.0" text="Autre Opération :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="394.0" layoutY="663.0" mnemonicParsing="false" onAction="#Choixpaneshow" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: d3d7da; -fx-border-width: 2;" text="OUI">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="420.0" layoutY="14.0" text="Ticket de Sortie Muscu">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
